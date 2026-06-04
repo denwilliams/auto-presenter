@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: #0a0a0a;
+  color: #ededed;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Reveal.js slide styles */
+.reveal .slides section {
+  text-align: left;
+  padding: 40px 50px;
+  box-sizing: border-box;
+  top: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+}
+
+.reveal .slides section .slide-content {
+  font-size: 100%;
+}
+
+.reveal .slides section .slide-content h2 {
+  text-align: left;
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 0.6em;
+  color: #4ade80;
+}
+
+.reveal .slides section .slide-content ul {
+  text-align: left;
+  font-size: 0.75em;
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.5;
+}
+
+.reveal .slides section .slide-content li {
+  margin-bottom: 0.35em;
+  padding-left: 1.2em;
+  position: relative;
+}
+
+.reveal .slides section .slide-content li::before {
+  content: "•";
+  color: #f472b6;
+  font-size: 1.2em;
+  position: absolute;
+  left: 0;
+  top: -0.05em;
+}
+
+.reveal .slides section .slide-counter {
+  position: absolute;
+  bottom: 16px;
+  right: 32px;
+  font-size: 0.45em;
+  color: #666;
+  margin: 0;
+}
